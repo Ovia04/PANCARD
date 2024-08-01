@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding : 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: aliceblue;
+}
+header{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:rgb(166, 37, 37);
+    color:aliceblue;
+    height:70px  ;
+    text-transform: capitalize;
+
+  }
+.Navbar{
+  
+    position:sticky;
+    top:-2px;
+    background-color: rgb(0, 0, 0);
+    letter-spacing: 1px;
+
+}
+
+.Navbar ul {
+   
+    display: flex;
+    justify-content:center;
+   
+}
+
+.Navbar ul li{
+   
+    cursor: pointer;
+    list-style-type: none;
+    padding:20px;
+}
+.Navbar ul li a{
+    color: white;
+    text-decoration: none;
+    transition:0.1s;
+}
+.Navbar ul li a:hover{
+   
+    color: rgb(17, 156, 17);
+   
+    
+
+}
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 15px;
+}
+table,td {
+    padding: 15px;
+    border-collapse: collapse;
+    border: 1px solid rgb(121, 119, 119);
+}
+.highlight{
+    color: rgb(30, 202, 30);
+}
+.Name{
+    width: 50%;
+    height: 30px;
+    font-weight: 500;
+    font-size: small;
+    background-color: transparent;
+    
+}
+.Father_Name{
+    width: 50%;
+    height: 30px;
+    font-weight: 500;
+    font-size: small;
+    background-color: transparent;
+}
+.Mother_Name{
+    width: 50%;
+    height: 30px;
+    font-weight: 500;
+    font-size: small;
+    background-color: transparent;
+}
+.DOB{
+    width: 50%;
+    height: 30px;
+}
+
+.submit_button{
+    background-color: rgb(6, 87, 6);
+    width:100%;
+    padding:2%;
+    cursor:pointer;
+}
+.submit_button:hover{
+    background-color:rgb(135, 212, 245);
+    transition: ease-in 0.5 ms;
+    font-size:130%;
+}
+
+.PAN_number, .name, .father-name, .mother-name, .officename, .Email_Name, .Aadhaar_number, .ALREADY{
+    width: 50%;
+    height: 30px;
+    font-weight: 500;
+    font-size: small;
+    background-color: transparent;
+}
+
+@media screen and (min-width:100px) and (max-width:1200px) {
+    header {
+        width: 1000px;
+        font-size:10px;
+        margin-left:-100px;
+    }
+    .Navbar{
+        width: 1000px;
+           margin-left:-100px;
+           
+    }
+    table,td{
+        width: 1000px;
+        padding:4px;
+    }
+    .submit_button{
+        width: 1000px;
+    }
+}
